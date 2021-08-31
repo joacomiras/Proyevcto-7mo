@@ -18,7 +18,22 @@ volatile int contador = 0;
 volatile int minutos = 0;
 
 void contador_horas() {
-  contador++;
+  // contador++;
+  // if (contador == 6) {
+  //   contador = 0;
+  //   noInterrupts();
+  //   minutos++;
+  // }
+  // if (minutos == 6) {
+  //   minutos = 0;
+  //   noInterrupts();
+  //   // debería ir una funcion de hacer lo del reloj
+  // }
+  // Serial.print(minutos);
+  // Serial.println(" minutos");
+  // Serial.print(contador);
+  // Serial.println(" segundos");
+  // // interrupts();
 }
 
 void setup() {
