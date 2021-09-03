@@ -52,6 +52,8 @@ void loop() {
   dn += dia;
   Serial.print(dn);
   Serial.println(" dn");
+
+  // ### Divisor resistivo ### //
   float medir=analogRead(A9)*(5.0/1024.0);
   Serial.println(medir);
 
@@ -88,6 +90,8 @@ if( minutos!=contadorDeMinutos ){
   Serial.println("° elevacion");
   Serial.print((180 / PI) * azimut);
   Serial.println("° azimut");
+
+  // ### Movimiento de servos ### //
   //servoElevacion.attach(5);
   //servoAzimut.attach(10);
   // servoElevacion.write(180);
